@@ -1,0 +1,10 @@
+menuentry "Linux" --class lubuntu {
+    search --no-floppy --fs-uuid --set=root XXX-XXX
+    linux /boot/vmlinuz root=UUID=XXX-XXX ro quiet
+    initrd /boot/initrd.img
+}
+
+menuentry 'Windows' --class windows {
+    search --no-floppy --fs-uuid --set=root XXX-XXX
+    chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+}
