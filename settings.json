@@ -58,6 +58,6 @@
         "*.md": "vscode.markdown.preview.editor"
     },
     "terminal.integrated.shellIntegration.enabled": false,
-    "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
+    "IDX.aI.enableInlineCompletion": false,
+    "IDX.aI.enableCodebaseIndexing": false
 }
