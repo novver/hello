@@ -1,3 +1,7 @@
+set default=0
+set timeout=10
+set timeout_style=menu
+
 menuentry "Linux" --class lubuntu {
     search --no-floppy --fs-uuid --set=root XXX-XXX
     linux /boot/vmlinuz root=UUID=XXX-XXX ro quiet
