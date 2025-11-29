@@ -1,0 +1,9 @@
+./scrcpy --no-control --video-source=camera --camera-size=1920x1080 --orientation=90 --v4l2-sink=/dev/video10 --audio-source=mic --no-playback
+
+
+sudo apt install v4l2loopback-dkms
+sudo modprobe v4l2loopback exclusive_caps=1 video_nr=10 card_label="scrcpycam"
+
+
+pactl list short sources
+pactl set-source-mute alsa_input.pci-0000_03_00.6.analog-stereo 1
