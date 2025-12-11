@@ -59,5 +59,6 @@
     },
     "terminal.integrated.shellIntegration.enabled": false,
     "IDX.aI.enableInlineCompletion": false,
-    "IDX.aI.enableCodebaseIndexing": false
+    "IDX.aI.enableCodebaseIndexing": false,
+    "git.enabled": false
 }
