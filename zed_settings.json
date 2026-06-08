@@ -46,9 +46,8 @@
   },
   "diagnostics_max_severity": "off",
   "soft_wrap": "editor_width",
-  "show_wrap_guides": true,
-  "rounded_selection": true,
-  "selection_highlight": true,
+  "rounded_selection": false,
+  "selection_highlight": false,
   "format_on_save": "off",
   "telemetry": {
     "diagnostics": false,
