@@ -1,0 +1,76 @@
+{
+  "ui_font_family": "Geist",
+  "terminal": {
+    "font_family": "Geist Mono"
+  },
+  "tab_size": 2,
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "git": {
+    "disable_git": true
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "default_model": {
+      "provider": "Poorouter",
+      "model": "gemini-3-flash-preview",
+      "enable_thinking": true,
+    },
+    "favorite_models": [],
+    "model_parameters": [
+      {
+        "temperature": 0.4,
+      }
+    ]
+  },
+  "project_panel": {
+    "dock": "left",
+    "show_diagnostics": "off"
+  },
+  "scrollbar": {
+    "diagnostics": "none"
+  },
+  "diagnostics": {
+    "lsp_pull_diagnostics": {
+      "enabled": false
+    },
+    "include_warnings": false
+  },
+  "diagnostics_max_severity": "off",
+  "soft_wrap": "editor_width",
+  "show_wrap_guides": true,
+  "rounded_selection": true,
+  "selection_highlight": true,
+  "format_on_save": "off",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "language_models": {
+    "openai_compatible": {
+      "Poorouter": {
+        "api_url": "http://127.0.0.1:6969/v1",
+        "available_models": [
+          {
+            "name": "gemini-3-flash-preview",
+            "display_name": "Gemini 3 Flash",
+            "max_tokens": 200000,
+          },
+        ],
+      },
+    },
+  },
+}
