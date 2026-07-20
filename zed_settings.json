@@ -1,4 +1,5 @@
 {
+  "enable_language_server": false,
   "tab_size": 2,
   "outline_panel": {
     "dock": "left"
