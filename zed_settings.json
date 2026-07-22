@@ -1,96 +1,104 @@
 {
-  "enable_language_server": false,
-  "tab_size": 2,
-  "outline_panel": {
-    "dock": "left"
-  },
-  "collaboration_panel": {
-    "dock": "left"
-  },
-  "git_panel": {
-    "dock": "left"
-  },
-  "agent": {
-    "notify_when_agent_waiting": "all_screens",
-    "play_sound_when_agent_done": "always",
-    "tool_permissions": {
-      "tools": {
-        "terminal": {
-          "always_allow": [
-            {
-              "pattern": "^rtk\\s+cat(\\s|$)"
-            },
-            {
-              "pattern": "^rtk\\s+grep(\\s|$)"
-            },
-            {
-              "pattern": "^rtk\\s+cargo(\\s|$)"
+    "enable_language_server": false,
+    "cli_default_open_behavior": "existing_window",
+    "tab_size": 2,
+    "outline_panel": {
+        "dock": "left"
+    },
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    "git_panel": {
+        "dock": "left"
+    },
+    "git": {
+        "disable_git": true
+    },
+    "agent": {
+        "notify_when_agent_waiting": "all_screens",
+        "play_sound_when_agent_done": "always",
+        "tool_permissions": {
+            "tools": {
+                "mcp:codebase-memory-mcp:get_architecture": {
+                    "default": "allow"
+                },
+                "terminal": {
+                    "default": "allow",
+                    "always_allow": [
+                        {
+                            "pattern": "^rtk\\s+cat(\\s|$)"
+                        },
+                        {
+                            "pattern": "^rtk\\s+grep(\\s|$)"
+                        },
+                        {
+                            "pattern": "^rtk\\s+cargo(\\s|$)"
+                        }
+                    ]
+                }
             }
-          ]
-        }
-      }
+        },
+        "default_model": {
+            "provider": "Poorouter",
+            "model": "gemini-3-flash-preview",
+            "enable_thinking": true
+        },
+        "sidebar_side": "right",
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": [
+            {
+                "temperature": 0.4
+            }
+        ]
     },
-    "default_model": {
-      "provider": "Bigmodel",
-      "model": "glm-5.2",
-      "enable_thinking": false
+    "project_panel": {
+        "dock": "left",
+        "show_diagnostics": "off"
     },
-    "sidebar_side": "right",
-    "dock": "right",
-    "favorite_models": [],
-    "model_parameters": [
-      {
-        "temperature": 0.4,
-      }
-    ]
-  },
-  "project_panel": {
-    "dock": "left",
-    "show_diagnostics": "off"
-  },
-  "scrollbar": {
-    "diagnostics": "none"
-  },
-  "diagnostics": {
-    "lsp_pull_diagnostics": {
-      "enabled": false
+    "scrollbar": {
+        "diagnostics": "none"
     },
-    "include_warnings": false
-  },
-  "diagnostics_max_severity": "off",
-  "soft_wrap": "editor_width",
-  "rounded_selection": false,
-  "selection_highlight": false,
-  "format_on_save": "off",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Ayu Dark",
-  },
-  "language_models": {
-    "openai_compatible": {
-      "Poorouter": {
-        "api_url": "http://127.0.0.1:6969/v1",
-        "available_models": [
-          {
-            "name": "gemini-3-flash-preview",
-            "display_name": "Gemini 3",
-            "max_tokens": 200000,
-            "capabilities": {
-              "chat_completions": true,
-              "tools": true,
-              "images": true,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
-              "interleaved_reasoning": false,
+    "diagnostics": {
+        "lsp_pull_diagnostics": {
+            "enabled": false
+        },
+        "include_warnings": false
+    },
+    "diagnostics_max_severity": "off",
+    "soft_wrap": "editor_width",
+    "rounded_selection": false,
+    "selection_highlight": false,
+    "format_on_save": "off",
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Ayu Dark"
+    },
+    "language_models": {
+        "openai_compatible": {
+            "Poorouter": {
+                "api_url": "http://127.0.0.1:6969/v1",
+                "available_models": [
+                    {
+                        "name": "gemini-3-flash-preview",
+                        "display_name": "Gemini 3",
+                        "max_tokens": 250000,
+                        "capabilities": {
+                            "chat_completions": true,
+                            "tools": true,
+                            "images": true,
+                            "parallel_tool_calls": false,
+                            "prompt_cache_key": false,
+                            "interleaved_reasoning": false
+                        }
+                    }
+                ]
             },
-          },
-        ],
-      }
+        }
     },
-  },
 }
