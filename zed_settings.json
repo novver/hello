@@ -1,5 +1,14 @@
 {
     "enable_language_server": false,
+    "languages": {
+      "HTML": {
+        "enable_language_server": true,
+        "language_servers": [
+          "live-server",
+          "!..."
+        ]
+      }
+    },
     "cli_default_open_behavior": "existing_window",
     "tab_size": 2,
     "outline_panel": {
